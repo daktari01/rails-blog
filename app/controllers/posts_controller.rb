@@ -21,3 +21,10 @@ class PostsController < ApplicationController
     end
     
 end
+
+
+def jomo(name)
+    puts "I am " + name 
+end
+
+jomo "Jomo"

@@ -2,13 +2,13 @@
 <%= form_for :post, url: posts_path do |f| %>
     <p>
         <%= f.label :title %>
-        <%= f.text_field :title %>
+        <%= f.text_field(:title, {:class => 'form-control', :placeholder => 'Add post title'}) %>
     </p>
     <p>
         <%= f.label :body %>
-        <%= f.text_area :body %>
+        <%= f.text_area(:body, {:class => 'form-control', :placeholder => 'Add post text'}) %>
     </p>
     <p>
-        <%= f.submit "Submit", disable_with: 'Submiting...' %>
+        <%= f.submit({:class => 'btn btn-success'}) %>
     </p>
 <% end %>
